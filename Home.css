@@ -800,7 +800,7 @@
   margin: -371px auto 281px 54px;
 }
 
-@media (min-width: 1600px) {
+/* @media (min-width: 1600px) {
   .u-section-5 {
     width: 60vw;
     margin: auto;
@@ -819,7 +819,7 @@
     width: 90vw;
     margin: auto;
    }
-}
+} */
 
 @media (max-width: 1199px) {
   .u-section-5 .u-sheet-1 {

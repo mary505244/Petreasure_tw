@@ -130,6 +130,25 @@
         loop: true,
         items: 1
     });
+
+    $(document).ready(function () {
+        // 按钮点击事件处理
+        $("#introduction-link").click(function () {
+            $("#introduction").get(0).scrollIntoView({ behavior: "smooth" });
+        });
+
+        $("#video-link").click(function () {
+            $("#video").get(0).scrollIntoView({ behavior: "smooth" });
+        });
+
+        $("#product-link").click(function () {
+            $("#product").get(0).scrollIntoView({ behavior: "smooth" });
+        });
+
+        $("#store-link").click(function () {
+            $("#store").get(0).scrollIntoView({ behavior: "smooth" });
+        });
+    });
     
 })(jQuery);
 

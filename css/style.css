@@ -10144,3 +10144,25 @@ h6,
     border-right: none !important;
   }
 }
+
+
+@media (max-width: 992px) { 
+  .img-logo {
+    /* border: 2px red solid; */
+    width: 40vw;
+    border-radius: 20px;
+  }
+}
+
+
+
+@media (min-width: 992px) { 
+  .img-logo {
+    /* border: 2px blue solid; */
+    width: 20vw;
+    border-radius: 20px;
+  }
+}
+
+
+  
