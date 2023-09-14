@@ -5,6 +5,9 @@
  * Copyright 2011-2020 Twitter, Inc.
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
  */
+
+ @import url('https://fonts.googleapis.com/css2?family=Caveat&display=swap');
+
 :root {
   --blue: #007bff;
   --indigo: #6610f2;
@@ -55,13 +58,14 @@ article, aside, figcaption, figure, footer, header, hgroup, main, nav, section {
 
 body {
   margin: 0;
-  font-family: "Poppins", sans-serif;
+  font-family: "Caveat", "Poppins", sans-serif;
   font-size: 1rem;
   font-weight: 400;
   line-height: 1.5;
   color: #555555;
   text-align: left;
   background-color: #F3F6FF;
+  letter-spacing: 1.5px;
 }
 
 [tabindex="-1"]:focus:not(:focus-visible) {
@@ -10196,4 +10200,13 @@ h6,
 .btn-buy {
   font-size: 20px;
   letter-spacing: 5px;
+}
+
+.cn-title, .en-title {
+  letter-spacing: 5px;
+  text-shadow: 1.5px 1.5px 3px rgba(107, 104, 96, 0.5);
+}
+
+.en-title {
+  font-family: 'Caveat', cursive;
 }
