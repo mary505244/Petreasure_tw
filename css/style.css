@@ -2377,8 +2377,8 @@ fieldset:disabled a.btn {
 
 .btn-primary:hover {
   color: #212529;
-  background-color: #ed7399;
-  border-color: #eb6891;
+  background-color: #977C00;
+  border-color: #977C00;
 }
 
 .btn-primary:focus, .btn-primary.focus {
@@ -2414,8 +2414,8 @@ fieldset:disabled a.btn {
 
 .btn-secondary:hover {
   color: #212529;
-  background-color: #41b6e2;
-  border-color: #36b2e0;
+  background-color: #977C00;
+  border-color: #977C00;
 }
 
 .btn-secondary:focus, .btn-secondary.focus {
@@ -4018,10 +4018,17 @@ input[type="button"].btn-block {
 .nav-link {
   display: block;
   padding: 0.5rem 1rem;
+  /* border: 2px red solid; */
+  letter-spacing: 5px;
+  font-size: 25px !important;
+  /* font-weight: ; */
+  text-shadow: 1.5px 1.5px 2.5px rgba(59, 56, 56, 0.5);
+
 }
 
 .nav-link:hover, .nav-link:focus {
   text-decoration: none;
+  cursor: pointer;
 }
 
 .nav-link.disabled {
@@ -9816,17 +9823,25 @@ h6,
   background-size: cover;
 }
 
+.section-title {
+  /* border: 2px red solid; */
+  letter-spacing: 5px;
+  text-shadow: 1.5px 1.5px 2.5px rgba(59, 56, 56, 0.5);
+
+}
+
+
 .section-title::before {
   position: absolute;
   content: "";
-  top: -10px;
+  top: -20px;
   left: 0;
   width: 100px;
   height: 5px;
   background: #dbc493;
 }
 
-.section-title::after {
+/* .section-title::after {
   position: absolute;
   content: "";
   top: -8px;
@@ -9834,7 +9849,7 @@ h6,
   width: 100px;
   height: 1px;
   background: #ada297;
-}
+} */
 
 .section-title.text-center::before,
 .section-title.text-center::after {
@@ -10164,5 +10179,21 @@ h6,
   }
 }
 
+.product-title {
+  /* border: 2px solid red; */
+  font-size: 35px;
+  letter-spacing: 3px;
+}
 
-  
+.product-content {
+  font-size: 22px;
+  letter-spacing: 2px;
+  font-weight: 500;
+  text-align: left;
+  color: #968662;
+}
+
+.btn-buy {
+  font-size: 20px;
+  letter-spacing: 5px;
+}
