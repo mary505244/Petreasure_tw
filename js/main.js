@@ -148,7 +148,103 @@
         $("#store-link").click(function () {
             $("#store").get(0).scrollIntoView({ behavior: "smooth" });
         });
+
+        window.addEventListener('scroll', function() {
+            var element = document.querySelector('.section-title');
+        
+            // 获取元素距离顶部的距离
+            var elementTop = element.getBoundingClientRect().top;
+        
+            // 获取窗口的高度
+            var windowHeight = window.innerHeight;
+        
+            // 当元素进入窗口可视范围时，添加Animate.css类来触发动画
+            if (elementTop < windowHeight) {
+                element.classList.add('animate__animated', 'animate__backInLeft');
+            }
+        });
+
+
+        // about-us
+        window.addEventListener('scroll', function() {
+
+            var element = document.querySelector('.about-us');
+            var elementTop = element.getBoundingClientRect().top;
+            var windowHeight = window.innerHeight;
+        
+            if (elementTop < windowHeight) {
+                element.classList.add('animate__animated', 'animate__lightSpeedInLeft');
+            }
+        });
+
+
+        // our-features
+        window.addEventListener('scroll', function() {
+
+            var element = document.querySelector('.our-features');
+            var elementTop = element.getBoundingClientRect().top;
+            var windowHeight = window.innerHeight;
+        
+            if (elementTop < windowHeight) {
+                element.classList.add('animate__animated', 'animate__lightSpeedInRight');
+            }
+        });
+
+
+        // cn-title
+        window.addEventListener('scroll', function() {
+
+            var element = document.querySelector('.cn-title');
+            var elementTop = element.getBoundingClientRect().top;
+            var windowHeight = window.innerHeight;
+        
+            if (elementTop < windowHeight) {
+                element.classList.add('animate__animated', 'animate__flipInX', 'animate__delay-1s');
+            }
+        });
+
+
+        // en-title
+        window.addEventListener('scroll', function() {
+
+            var element = document.querySelector('.en-title');
+            var elementTop = element.getBoundingClientRect().top;
+            var windowHeight = window.innerHeight;
+        
+            if (elementTop < windowHeight) {
+                element.classList.add('animate__animated', 'animate__flipInX', 'animate__delay-1s');
+            }
+        });
+
+
+        // icon
+        // window.addEventListener('scroll', function() {
+
+        //     var element = document.querySelector('.icon');
+        //     var elementTop = element.getBoundingClientRect().top;
+        //     var windowHeight = window.innerHeight;
+        
+        //     if (elementTop < windowHeight) {
+        //         element.classList.add('animate__animated', 'animate__jello');
+        //     }
+        // });
+
+        window.addEventListener('scroll', function() {
+            // 使用 querySelectorAll 选择所有带有 '.icon' 类名的元素
+            var elements = document.querySelectorAll('.icon');
+        
+            elements.forEach(function(element) {
+                var elementTop = element.getBoundingClientRect().top;
+                var windowHeight = window.innerHeight;
+        
+                if (elementTop < windowHeight) {
+                    element.classList.add('animate__animated', 'animate__jello');
+                }
+            });
+        });
+
+        
     });
-    
+
 })(jQuery);
 
