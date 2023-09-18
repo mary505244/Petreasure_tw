@@ -150,15 +150,11 @@
         });
 
         window.addEventListener('scroll', function() {
+
             var element = document.querySelector('.section-title');
-        
-            // 获取元素距离顶部的距离
             var elementTop = element.getBoundingClientRect().top;
-        
-            // 获取窗口的高度
             var windowHeight = window.innerHeight;
         
-            // 当元素进入窗口可视范围时，添加Animate.css类来触发动画
             if (elementTop < windowHeight) {
                 element.classList.add('animate__animated', 'animate__backInLeft');
             }

@@ -4168,6 +4168,8 @@ input[type="button"].btn-block {
   flex-basis: 100%;
   flex-grow: 1;
   align-items: center;
+  background-color: #EFDDBA;
+  border-radius: 50px;
 }
 
 .navbar-toggler {
@@ -10209,4 +10211,12 @@ h6,
 
 .en-title {
   font-family: 'Caveat', cursive;
+}
+
+.footer-content {
+  font-size: 18px;
+  letter-spacing: 3px;
+  font-weight: 500;
+  /* text-align: left; */
+  color: #968662;
 }
