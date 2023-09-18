@@ -10243,3 +10243,11 @@ h6,
   letter-spacing: 3px;
   line-height: 40px;
  }
+
+ .highlight {
+  /* font-size: 1.5rem; */
+  /* color: #6f8067; */
+  background: url(//s2.svgbox.net/pen-brushes.svg?ic=brush-6&color=f5e6c9);
+  margin: -2px -6px;
+  padding: 3px 13px;
+}
