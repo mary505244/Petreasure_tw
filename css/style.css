@@ -10169,8 +10169,41 @@ h6,
     width: 40vw;
     border-radius: 20px;
   }
-}
+  .navbar-collapse {
+    background-color: white;
+   }
+  
+   .navbar-light .navbar-nav .nav-link {
+    font-size: 15px !important;
+    padding: 10px 7px;
+  }
 
+  .carousel-title {
+    /* border: 2px red solid; */
+    font-size: 18px !important;
+  }
+
+  .carousel-content {
+    font-size: 22px !important;
+  }
+
+  .ad-title {
+      font-size: 35px !important;
+  }
+
+  .ad-subtitle {
+    font-size: 25px !important;
+  }
+
+  .ad-content {
+    font-size: 20px !important;
+  }
+
+  .vip-content {
+    /* border: 2px red solid; */
+    font-size: 16px !important;
+  }
+}
 
 
 @media (min-width: 992px) { 
@@ -10178,6 +10211,37 @@ h6,
     /* border: 2px blue solid; */
     width: 20vw;
     border-radius: 20px;
+  }
+
+  .navbar-collapse {
+    background-color: #EFDDBA;
+   }
+ 
+   .navbar-light .navbar-nav .nav-link {
+     font-size: 23px !important;
+     padding: 30px 10px;
+  }
+
+  .ad-title {
+    /* border: 2px red solid; */
+    font-size: 48px !important;
+    /* text-align: left; */
+  }
+
+  .ad-subtitle {
+    /* border: 2px red solid; */
+    font-size: 32px !important;
+  }
+
+  .ad-content {
+    /* border: 2px red solid; */
+    font-size: 28px !important;
+  }
+
+  .vip-content {
+    /* border: 2px red solid; */
+    font-size: 25px !important;
+    letter-spacing: 3px;
   }
 }
 
@@ -10216,26 +10280,10 @@ h6,
   color: #968662;
 }
 
-@media (max-width: 991px) {
- .navbar-collapse {
-  background-color: white;
- }
-
- .navbar-light .navbar-nav .nav-link {
-  font-size: 15px !important;
-  padding: 10px 7px;
-}
-}
-
-@media (min-width: 991px) {
-  .navbar-collapse {
-   background-color: #EFDDBA;
-  }
-
-  .navbar-light .navbar-nav .nav-link {
-    font-size: 23px !important;
-    padding: 30px 10px;
- }
+.company-logo {
+  /* border: 2px blue solid; */
+  width: 50px;
+  margin: 0 10px;
 }
 
 .about-us-content {
@@ -10250,4 +10298,9 @@ h6,
   background: url(//s2.svgbox.net/pen-brushes.svg?ic=brush-6&color=f5e6c9);
   margin: -2px -6px;
   padding: 3px 13px;
+}
+
+.footer-bg {
+  background: linear-gradient(rgba(255, 255, 255, 0.75), rgba(255, 255, 255, 0.75)), url(../img/footer.jpg), no-repeat center center;
+  background-size: cover;
 }
